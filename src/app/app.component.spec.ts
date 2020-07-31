@@ -44,7 +44,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('header>mat-toolbar>section>h1').textContent).toContain('Charity');
+    expect(compiled.querySelector('header>mat-toolbar>section>span>h1').textContent).toContain('Charity');
   });
 
 });
