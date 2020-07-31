@@ -1,12 +1,13 @@
 dist: trusty
-sudo: true
+sudo: false
 
 language: node_js
 node_js:
-  - "10"
+  - "12"
 
 addons:
   apt:
+    update: true
     sources:
       - google-chrome
     packages:
