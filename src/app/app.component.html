@@ -1,0 +1,26 @@
+<header>
+  <mat-toolbar  fxLayoutAlign="center center">
+    <section fxFlex=80 fxLayout="row">
+      <span [routerLink]="[ '/' ]">
+        <img height="30dp" src="../assets/logo.svg" alt="Logo" aria-label="imagem de uma arvore com frutos de coração">
+        <h1 fxFlexOffset='10px'>{{title | titlecase }}</h1>
+      </span>
+      <span fxFlex='1 1 auto'></span>
+      <nav>
+        <a [routerLink]="[ '/about' ]" mat-button routerLinkActive="mat-primary">Sobre</a>
+        <a [routerLink]="[ '/news' ]" mat-button routerLinkActive="mat-primary">Noticias</a>
+        <a [routerLink]="[ '/archives' ]" mat-button routerLinkActive="mat-primary">Midias</a>
+        <a [routerLink]="[ '/contact' ]" mat-button routerLinkActive="mat-primary">Contato</a>
+        <a [routerLink]="[ '/donate' ]" mat-button routerLinkActive="mat-primary">Apoie</a>
+      </nav>
+    </section>
+  </mat-toolbar>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer fxLayoutAlign="center center">
+  <section fxFlex=80>
+    
+  </section>
+</footer>
