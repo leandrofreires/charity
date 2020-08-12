@@ -14,6 +14,14 @@ import { ArchivesComponent } from './archives/archives.component';
 import { ContactComponent } from './contact/contact.component';
 import { DonateComponent } from './donate/donate.component';
 import { HomeComponent } from './home/home.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -32,7 +40,14 @@ import { HomeComponent } from './home/home.component';
     FlexLayoutModule,
     MatButtonModule,
     MatToolbarModule,
-
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDividerModule,
+    MatSliderModule,
+    MatButtonToggleModule,
+    MatTooltipModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

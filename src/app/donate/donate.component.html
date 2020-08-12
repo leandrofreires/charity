@@ -1,1 +1,49 @@
-<p>donate works!</p>
+<section fxLayoutAlign='center center' style="padding: 16px;">
+    <article fxFlex=80>
+        <header>
+            <h1>Contribua! sua ajuda é muito importante para nós</h1>
+        </header>
+        <form action="" fxLayoutGap='10px grid' fxLayout='row wrap' >
+            <h3 fxFlex=100>Dados Pessoais</h3>
+            <mat-form-field fxFlex='1 2 calc(50%-10px)' fxFlex.lt-sm=100>
+                <mat-label>Nome</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field fxFlex='1 2 calc(50%-10px)' fxFlex.lt-sm=100>
+                <mat-label>Sobrenome</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field fxFlex='1 2 calc(50%-10px)' fxFlex.lt-sm=100>
+                <mat-label>Email</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field fxFlex='1 2 calc(50%-10px)' fxFlex.lt-sm=100>
+                <mat-label>Celular</mat-label>
+                <input matInput>
+            </mat-form-field>
+            
+            <section fxFlex='1 2 calc(50%-10px)' fxLayout='column'>
+                <h3>Forma Doação</h3>
+                <mat-button-toggle-group>
+                    <mat-button-toggle fxFlex matTooltip="Contribuição mensal"><mat-icon>autorenew</mat-icon> Doação Recorrente</mat-button-toggle>
+                    <mat-button-toggle fxFlex matTooltip="Contribuição unica"><mat-icon>check</mat-icon> Doação Unica</mat-button-toggle>
+                </mat-button-toggle-group>
+            </section>
+            <section fxFlex='1 2 calc(50%-10px)' fxLayout='column'>
+                <h3>Valor da Doação</h3>
+                <b>{{valor.value | currency:'BRL'}}</b>
+                <mat-slider #valor min="5" max="100" step="5" value="0"></mat-slider>
+            </section>
+            
+            <h3 fxFlex=100>Forma de Pagamento</h3>
+            <section fxFlex='1 2 calc(50%-10px)'>
+                <mat-button-toggle-group >
+                <mat-button-toggle fxFlex><mat-icon>credit_card</mat-icon> Cartão de Crédito</mat-button-toggle>
+                <mat-button-toggle fxFlex><mat-icon>local_atm</mat-icon> Boleto Bancário</mat-button-toggle>
+                <mat-button-toggle fxFlex><mat-icon>account_balance</mat-icon> Transferência</mat-button-toggle>
+            </mat-button-toggle-group>
+            </section>
+            
+        </form>
+    </article>
+</section>
