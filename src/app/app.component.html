@@ -1,17 +1,17 @@
 <header>
   <mat-toolbar  fxLayoutAlign="center center">
     <section fxFlex=80 fxLayout="row">
-      <span [routerLink]="[ '/' ]">
+      <span>
         <img height="30dp" src="../assets/logo.svg" alt="Logo" aria-label="imagem de uma arvore com frutos de coração">
         <h1 fxFlexOffset='10px'>{{title | titlecase }}</h1>
       </span>
       <span fxFlex='1 1 auto'></span>
       <nav>
-        <a [routerLink]="[ '/about' ]" mat-button routerLinkActive="mat-primary">Sobre</a>
-        <a [routerLink]="[ '/news' ]" mat-button routerLinkActive="mat-primary">Noticias</a>
-        <a [routerLink]="[ '/archives' ]" mat-button routerLinkActive="mat-primary">Midias</a>
-        <a [routerLink]="[ '/contact' ]" mat-button routerLinkActive="mat-primary">Contato</a>
-        <a [routerLink]="[ '/donate' ]" mat-button routerLinkActive="mat-primary">Apoie</a>
+        <a [routerLink]="[ '/about' ]" mat-button color='accent'>Sobre</a>
+        <a [routerLink]="[ '/news' ]" mat-button  color='accent'>Noticias</a>
+        <a [routerLink]="[ '/archives' ]" mat-button  color='accent'>Midias</a>
+        <a [routerLink]="[ '/contact' ]" mat-button   color='accent'>Contato</a>
+        <a [routerLink]="[ '/donate' ]" mat-flat-button color='accent'>Apoie <mat-icon>favorite</mat-icon></a>
       </nav>
     </section>
   </mat-toolbar>
@@ -21,6 +21,6 @@
 </main>
 <footer fxLayoutAlign="center center">
   <section fxFlex=80>
-    
+    <h4>Charrity WebSite</h4>
   </section>
 </footer>
